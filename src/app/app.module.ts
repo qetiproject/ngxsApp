@@ -12,12 +12,12 @@ import { RouterState } from './shared/router.state';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
-// import { StoreModule } from '@ngrx/store';
-// import { AppEffects } from './shared/app.effects';
-// import { appReducer } from './shared/app.reducer';
-// import { RouterEffects } from './shared/router.effetcts';
-// import { routerReducer } from './shared/router.reducer';
-// import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { AppEffects } from './shared/app.effects';
+import { appReducer } from './shared/app.reducer';
+import { RouterEffects } from './shared/router.effetcts';
+import { routerReducer } from './shared/router.reducer';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [

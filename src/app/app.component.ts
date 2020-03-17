@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Store, Select } from '@ngxs/store';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngxsApp';
+  //state$: Observable<AppState>;
+  @Select(state => state.app) app$;
+  constructor(private store: Store) {
+    // this.state$ = this.store.select(state => state.app);
+  }
 }

@@ -17,7 +17,7 @@ export interface AppStateModel {
 export class AppState {
   
    @Action(SetUsername)
-     setUsername({ patchState, dispatch }: StateContext<AppStateModel>, { payload} : SetUsername ) {
+     setUsername({ patchState, getState }: StateContext<AppStateModel>, { payload}: SetUsername ) {
       const currentUser = getState().username
       patchState({username: payload});
    }
